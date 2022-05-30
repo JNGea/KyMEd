@@ -23,20 +23,31 @@ body{
   background-attachment: fixed;
 }
 
+/* efectos */
+
+.glassEffect{
+  background: rgba(155, 155, 155, 0.25);
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
 
 /* header */
 
 header{
   display: flex;
-  background-color: rgb(0, 194, 187, 0.5);
+  background-color: rgb(0, 194, 187);
   margin-bottom: 2rem;
   width: 100%;
+  gap: 3rem;
   justify-content: space-around;
   align-items: center;
 }
 
 header picture{
-  flex-basis: 40%;
+  flex-basis: 50%;
 }
 
 header picture img{
@@ -45,15 +56,22 @@ header picture img{
 }
 
 nav{
-  flex-basis: 60%;
+  display: flex;
+  flex-basis: 50%;
+  padding: .4rem;
+  /* background-color: aliceblue;
+  height: 3.5rem;
+  border-radius: 10px;
+  padding: .5rem; */
 }
 
 nav > ul{
   display: flex;
-  flex-basis: 60%;
-  gap: 2rem;
+  flex-basis: 100%;
+  /* gap: 2rem; */
   justify-content: space-between;
-  border: 3px solid red;
+  /* align-items: flex-end; */
+  /* border: 3px solid red; */
 }
 
 nav > ul > li{
@@ -65,8 +83,36 @@ nav > ul > li > a{
   text-decoration: none;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.6em;
+  border-top: 2px solid rgb(0, 194, 187);
+  border-bottom: 2px solid rgb(0, 194, 187);
+  transition: all .3s ease-in-out;
 }
 
+nav > ul > li > a:hover{
+  /* color: rgb(71, 105, 111); */
+  border-top: 2px solid rgb(22, 77, 75);
+  border-bottom: 2px solid rgb(22, 77, 75);
+
+}
+
+    /* nav > ul > li > a:before{
+  content: '';
+  position: absolute;
+  background: deeppink;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  animation: 1s forwards ani1 linear;
+  z-index: -1;
+}
+
+nav > ul > li > a:hover:before,
+nav > ul > li > a:focus:before{
+  animation: .5s forwards ani2 linear;
+}
+ */
 
 /* main */
 
@@ -87,7 +133,7 @@ main {
 /* footer */
 
 footer{
-  background-color: rgb(0, 194, 187, 0.5);
+  background-color: rgb(0, 194, 187);
   height: 55px;
   margin-top: 2rem;
   display: flex;
@@ -197,13 +243,19 @@ footer{
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  transition: all .5s linear;
   /* justify-content: space-between; */
+}
+
+.staffBox:hover{
+  transform: scale(1.1, 1.1);
 }
 
 .fisioPhoto{
   width: 248px;
   height: 165px;
-  border-radius: 15%;
+  border-radius: 10px;
+  padding-top: .5rem;
 }
 
 .fisioName{
@@ -332,5 +384,43 @@ footer{
 
   .fisioDescription {
     font-size: 1.4em;
+  }
+}
+
+@keyframes ani2 {
+  0%{
+    transform: scaleX(0);
+    height: 5px;
+  }
+  45%{
+    transform: scaleX(1);
+    height: 5px;
+  }
+  55%{
+    height: 5px;
+  }
+  100%{
+    transform: scaleX(1);
+    height: 40px;
+  }
+}
+
+@keyframes ani1 {
+  0%{
+    transform: scaleX(1);
+    height: 40px;
+  }
+  45%{
+    height: 5px;
+  }
+  55%{
+    transform: scaleX(1);
+    height: 5px;
+    opacity: 1;
+  }
+  100%{
+    transform: scaleX(0);
+    height: 5px;
+    opacity: .01;
   }
 }
