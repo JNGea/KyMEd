@@ -68,6 +68,7 @@ nav > ul{
 
 nav > ul > li{
   list-style: none;
+  margin: .7rem;
 }
 
 nav > ul > li > a{
@@ -119,6 +120,9 @@ footer{
   height: 20px;
 }
 
+/* bootstrap */
+
+
 
 /* pestaña home */
 
@@ -159,12 +163,22 @@ footer{
 
 /* pestaña servicios */
 
-.carrusel{
-  border: 1px solid red;
-  width: 85%;
-  height: 100px;
-  margin: 2rem;
-  text-align: center;
+.carousel{
+  /* border: 1px solid red;
+  width: 90%;
+  height: 201px;
+  text-align: center; */
+  margin: 2rem 0;
+}
+
+/* .carousel-item{
+  height: 230px;
+  border: 2px solid rgb(72, 118, 158);
+} */
+
+.carousel-inner{
+  height: 240px;
+  border: 2px solid rgb(72, 118, 158);
 }
 
 .services{
@@ -232,6 +246,7 @@ footer{
   font-family: 'Average Sans', sans-serif;
   font-size: 1.6em;
   padding: 1rem;
+  margin: 0;
 }
 
 
