@@ -94,15 +94,9 @@ main {
   margin: 0 auto;
   max-width: 1200px;
 }
-
-/* .divCenter{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  flex-grow: 1;
-  flex-shrink: 1;
-} */
+.mainIndex {
+display: flex;
+}
 
 /* footer */
 
@@ -126,7 +120,7 @@ footer{
 #videoHome{
   display: flex;
   align-items: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .video{
@@ -170,11 +164,11 @@ footer{
 }
 
 .carousel-control-next {
-  margin-top: 10%;
+  margin: auto;
 }
 
 .carousel-control-prev {
-  margin-top: 10%;
+  margin: auto;
 }
 
 .services{
