@@ -95,14 +95,14 @@ main {
   max-width: 1200px;
 }
 
-.divCenter{
+/* .divCenter{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   flex-grow: 1;
   flex-shrink: 1;
-}
+} */
 
 /* footer */
 
@@ -167,6 +167,14 @@ footer{
 .carousel-inner {
   height: 240px;
   border: 2px solid rgb(72, 118, 158);
+}
+
+.carousel-control-next {
+  margin-top: 10%;
+}
+
+.carousel-control-prev {
+  margin-top: 10%;
 }
 
 .services{
