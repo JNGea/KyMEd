@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=K2D:wght@200;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
 
-*{
+/* *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -13,29 +13,28 @@ html{
 }
 /* body */
 
-body{
+/* body{
   background-image: url('../img/fisioterapia.jpg');
   background-position: center center;
   background-attachment: fixed;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-}
+} */
 
 /* efectos */
 
-.glassEffect{
+/* .glassEffect{
   background: rgba(155, 155, 155, 0.25);
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-}
+} */
 
 /* header */
 
-header{
+/* header{
   display: flex;
   background-color: rgb(0, 194, 187);
   margin-bottom: 2rem;
@@ -52,9 +51,9 @@ header picture{
 header picture img{
   max-width: 200px;
   margin: 1rem;
-}
+} */
 
-nav{
+/* nav{
   display: flex;
   flex-basis: 50%;
   padding: .4rem;
@@ -82,25 +81,21 @@ nav > ul > li > a{
 }
 
 nav > ul > li > a:hover{
-  /* color: rgb(71, 105, 111); */
   border-top: 2px solid rgb(22, 77, 75);
   border-bottom: 2px solid rgb(22, 77, 75);
-
-}
+} */
 
 /* main */
 
-main {
+/* main {
   margin: 0 auto;
   max-width: 1200px;
-}
-.mainIndex {
-display: flex;
-}
+} */
+
 
 /* footer */
 
-footer{
+/* footer{
   background-color: rgb(0, 194, 187);
   height: 55px;
   margin-top: 2rem;
@@ -112,15 +107,18 @@ footer{
 .redSocial{
   width: 20px;
   height: 20px;
-}
+} */
 
 
 /* pestaña home */
 
+/* .mainIndex {
+display: flex;
+}
+
 #videoHome{
   display: flex;
   align-items: center;
-  /* border: 1px solid red; */
 }
 
 .video{
@@ -149,12 +147,12 @@ footer{
 .videoHomeDescription p{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.6em;
-}
+} */
 
 
 /* pestaña servicios */
 
-.carousel {
+/* .carousel {
   margin: 2rem 0;
 }
 
@@ -197,12 +195,12 @@ footer{
   font-size: 1.6em;
   text-align: justify;
   padding: 1.5rem;
-}
+} */
 
 
 /* pestaña staff */
 
-.staff{
+/* .staff{
   gap: 2rem;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
@@ -236,12 +234,12 @@ footer{
   font-family: 'Average Sans', sans-serif;
   font-size: 1.6em;
   padding: 1rem;
-}
+} */
 
 
 /* pestaña ubicación */
 
-.map{
+/* .map{
   width: 600px;
   height: 450px;
 }
@@ -249,7 +247,7 @@ footer{
 .mapTitle{
   text-align: center;
   font-size: 2.5em;
-}
+} */
 
 
 /* pestaña contacto */
@@ -268,7 +266,7 @@ footer{
   background: none;
 } */
 
-.contact_form {
+/* .contact_form {
   width: 460px;
   height: auto;
   margin: 80px auto;
@@ -373,11 +371,11 @@ p {
 .formulario textarea:focus {
   outline: 0;
   border: 1px solid #97d848;
-}
+} */
 
 /* media queries */
 
-@media screen and (min-width:320px) and (max-width:937px) {
+/* @media screen and (min-width:320px) and (max-width:937px) {
   #videoHome {
     flex-direction: column-reverse;
   }
@@ -428,7 +426,6 @@ p {
 
   .servDescription{
     font-size: 1.4em;
-    /* text-align: center; */
     padding: .5rem;
   }
 }
@@ -463,4 +460,4 @@ p {
   .fisioDescription {
     font-size: 1.4em;
   }
-}
+} */

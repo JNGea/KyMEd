@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
+
+
+// efectos
+@import "./misc/effects.scss";
+
+// normalizaciones
+@import "./misc/normalize.scss";
+
+// header y footer
+@import "./partials/header.scss";
+@import "./partials/footer.scss";
+
+// secciones
+@import "./views/home.scss";
+@import "./views/staff.scss";
+@import "./views/servicios.scss";
+@import "./views/ubicacion.scss";
+@import "./views/contacto.scss";
+
+// media queries
+@import "./misc/queries.scss";
