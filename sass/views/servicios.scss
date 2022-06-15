@@ -24,16 +24,19 @@
   border: 1px solid red;
 
   .servArticle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    @include flex(column, normal, center, 1rem);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // gap: 1rem;
     flex: 1 1 40%;
 
     .servTitle {
+      @extend .fisioName;
       margin-bottom: 1rem;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      font-size: 2.5em;
+      // font-family: Georgia, 'Times New Roman', Times, serif;
+      // font-size: 2.5em;
+      // color: map-get($colors, primary);
     }
 
     .servDescription {
@@ -41,6 +44,7 @@
       font-size: 1.6em;
       text-align: justify;
       padding: 1.5rem;
+      color: map-get($colors, text-color);
     }
   }
 }

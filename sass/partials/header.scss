@@ -1,7 +1,7 @@
 // header
 header {
   display: flex;
-  background-color: rgb(0, 194, 187);
+  background-color: map-get($colors, bg-color );
   margin-bottom: 2rem;
   width: 100%;
   gap: 3rem;
@@ -32,12 +32,12 @@ header {
         margin: .7rem;
 
         a {
-          color: rgb(0, 3, 62);
+          color: map-get($colors, base);
           text-decoration: none;
           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
           font-size: 1.6em;
-          border-top: 2px solid rgb(0, 194, 187);
-          border-bottom: 2px solid rgb(0, 194, 187);
+          border-top: 2px solid map-get($colors, bg-color );
+          border-bottom: 2px solid map-get($colors, bg-color );
           transition: all .3s ease-in-out;
 
           &:hover {

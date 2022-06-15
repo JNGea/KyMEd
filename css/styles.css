@@ -1,463 +1,302 @@
-
-@import url('https://fonts.googleapis.com/css2?family=K2D:wght@200;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
-
-/* *{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html{
-  font-size: 62.5%;
-}
-/* body */
-
-/* body{
-  background-image: url('../img/fisioterapia.jpg');
-  background-position: center center;
-  background-attachment: fixed;
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-} */
-
-/* efectos */
-
-/* .glassEffect{
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@200;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&display=swap");
+.glassEffect {
   background: rgba(155, 155, 155, 0.25);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-} */
+  border: 1px solid rgba(255, 255, 255, 0.18); }
 
-/* header */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
-/* header{
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: url("../img/fisioterapia.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; }
+
+main {
+  margin: 0 auto;
+  max-width: 1200px; }
+
+header {
   display: flex;
-  background-color: rgb(0, 194, 187);
+  background-color: #00c2bb;
   margin-bottom: 2rem;
   width: 100%;
   gap: 3rem;
   justify-content: space-around;
-  align-items: center;
-}
+  align-items: center; }
+  header picture {
+    flex-basis: 50%; }
+    header picture img {
+      max-width: 200px;
+      margin: 1rem; }
+  header nav {
+    display: flex;
+    flex-basis: 50%;
+    padding: .4rem; }
+    header nav ul {
+      display: flex;
+      flex-basis: 100%;
+      justify-content: space-between; }
+      header nav ul li {
+        list-style: none;
+        margin: .7rem; }
+        header nav ul li a {
+          color: #00033e;
+          text-decoration: none;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-size: 1.6em;
+          border-top: 2px solid #00c2bb;
+          border-bottom: 2px solid #00c2bb;
+          transition: all .3s ease-in-out; }
+          header nav ul li a:hover {
+            border-top: 2px solid #164d4b;
+            border-bottom: 2px solid #164d4b; }
 
-header picture{
-  flex-basis: 50%;
-}
-
-header picture img{
-  max-width: 200px;
-  margin: 1rem;
-} */
-
-/* nav{
-  display: flex;
-  flex-basis: 50%;
-  padding: .4rem;
-}
-
-nav > ul{
-  display: flex;
-  flex-basis: 100%;
-  justify-content: space-between;
-}
-
-nav > ul > li{
-  list-style: none;
-  margin: .7rem;
-}
-
-nav > ul > li > a{
-  color:rgb(0, 3, 62);
-  text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.6em;
-  border-top: 2px solid rgb(0, 194, 187);
-  border-bottom: 2px solid rgb(0, 194, 187);
-  transition: all .3s ease-in-out;
-}
-
-nav > ul > li > a:hover{
-  border-top: 2px solid rgb(22, 77, 75);
-  border-bottom: 2px solid rgb(22, 77, 75);
-} */
-
-/* main */
-
-/* main {
-  margin: 0 auto;
-  max-width: 1200px;
-} */
-
-
-/* footer */
-
-/* footer{
-  background-color: rgb(0, 194, 187);
+footer {
+  background-color: #00c2bb;
   height: 55px;
   margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-}
+  align-items: center; }
+  footer .redSocial {
+    width: 20px;
+    height: 20px; }
 
-.redSocial{
-  width: 20px;
-  height: 20px;
-} */
+.mainIndex {
+  display: flex; }
+  .mainIndex #videoHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+    gap: 0rem; }
+    .mainIndex #videoHome .video {
+      flex-basis: 50%; }
+      .mainIndex #videoHome .video iframe {
+        width: 480px;
+        height: 240px; }
+  .mainIndex .videoHomeDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    gap: 2rem;
+    margin: 1.5rem;
+    text-align: center; }
+    .mainIndex .videoHomeDescription h1 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 2.5em;
+      color: #000035; }
+    .mainIndex .videoHomeDescription p {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 1.6em;
+      color: #060641; }
 
-
-/* pestaña home */
-
-/* .mainIndex {
-display: flex;
-}
-
-#videoHome{
-  display: flex;
-  align-items: center;
-}
-
-.video{
-  flex-basis: 50%;
-}
-
-.video > iframe {
-  width: 480px;
-  height: 240px;
-}
-
-.videoHomeDescription{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.staff {
   gap: 2rem;
-  margin: 1.5rem;
-  text-align: center;
-}
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr; }
+  .staff .staffBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    gap: 1rem;
+    transition: all .5s linear; }
+    .staff .staffBox:hover {
+      transform: scale(1.1, 1.1); }
+    .staff .staffBox .fisioPhoto {
+      width: 248px;
+      height: 165px;
+      border-radius: 10px;
+      padding-top: .5rem; }
+    .staff .staffBox .fisioName, .staff .staffBox .fisioDescription, .staff .staffBox .services .servArticle .servTitle, .services .servArticle .staff .staffBox .servTitle {
+      font-family: 'K2D', sans-serif;
+      font-size: 2.5em;
+      color: #000035; }
+    .staff .staffBox .fisioDescription {
+      padding: 1rem; }
 
-.videoHomeDescription h1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 2.5em;
-}
+.carousel {
+  margin: 2rem 0; }
+  .carousel .carousel-inner {
+    height: 240px;
+    border: 2px solid #48769e; }
+  .carousel .carousel-control-next {
+    margin: auto; }
+  .carousel .carousel-control-prev {
+    margin: auto; }
 
-.videoHomeDescription p{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.6em;
-} */
-
-
-/* pestaña servicios */
-
-/* .carousel {
-  margin: 2rem 0;
-}
-
-.carousel-inner {
-  height: 240px;
-  border: 2px solid rgb(72, 118, 158);
-}
-
-.carousel-control-next {
-  margin: auto;
-}
-
-.carousel-control-prev {
-  margin: auto;
-}
-
-.services{
+.services {
   gap: 2rem;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
-  border: 1px solid red;
-}
+  border: 1px solid red; }
+  .services .servArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1 40%; }
+    .services .servArticle .servTitle {
+      margin-bottom: 1rem; }
+    .services .servArticle .servDescription {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.6em;
+      text-align: justify;
+      padding: 1.5rem;
+      color: #060641; }
 
-.servArticle{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  flex: 1 1 40%
-}
-
-.servTitle{
-  margin-bottom: 1rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 2.5em;
-}
-
-.servDescription{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.6em;
-  text-align: justify;
-  padding: 1.5rem;
-} */
-
-
-/* pestaña staff */
-
-/* .staff{
-  gap: 2rem;
-  display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
-}
-
-.staffBox{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  transition: all .5s linear;
-}
-
-.staffBox:hover{
-  transform: scale(1.1, 1.1);
-}
-
-.fisioPhoto{
-  width: 248px;
-  height: 165px;
-  border-radius: 10px;
-  padding-top: .5rem;
-}
-
-.fisioName{
-  font-family: 'K2D', sans-serif;
-  font-size: 2.5em;
-}
-
-.fisioDescription{
-  font-family: 'Average Sans', sans-serif;
-  font-size: 1.6em;
-  padding: 1rem;
-} */
-
-
-/* pestaña ubicación */
-
-/* .map{
+.map {
   width: 600px;
-  height: 450px;
-}
+  height: 450px; }
 
-.mapTitle{
+.mapTitle {
   text-align: center;
-  font-size: 2.5em;
-} */
+  font-size: 2.5em; }
 
-
-/* pestaña contacto */
-
-/* .form{
-  border-top: 2px dashed red;
-  border-bottom: 2px dashed red;
-  width: 250px;
-  padding: 15px 0 15px 20px ;
-}
-
-.formBox{
-  border-radius: 5px;
-  border: 1px solid black;
-  margin-bottom: 5px;
-  background: none;
-} */
-
-/* .contact_form {
+.contact_form {
   width: 460px;
   height: auto;
   margin: 80px auto;
   border-radius: 10px;
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: rgba(251, 251, 251, .8);
-  padding-left: 30px;
-}
-
-input {
-  background-color: #fbfbfb;
-  width: 408px;
-  height: 40px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ab4493;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-}
-
-textarea {
-  background-color: #fbfbfb;
-  width: 405px;
-  height: 150px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ab4493;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
-}
-
-label {
-  display: block;
-  float: center;
-}
-
-button {
-  height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  background-color: #ab4493;
-  border-color: #ab4493;
-  border-style: solid;
-  border-radius: 10px;
-  width: 420px;
-  cursor: pointer;
-}
-
-button > p {
-  color: #fff;
-}
-
-.obligatorio {
-  color: #ab4493;
-}
-
-.aviso {
-  font-size: 13px;
-  color: #0e0e0e;
-}
-
-.formTitle {
-  font-size: 39px;
-  text-align: letf;
-  padding-bottom: 20px;
-  color: #ab4493;
-}
-
-.formSubTitle {
-  font-size: 16px;
-  padding-bottom: 30px;
-  color: #0e0e0e;
-}
-
-p {
-  font-size: 14px;
-  color: #0e0e0e;
-}
+  background-color: rgba(251, 251, 251, 0.8);
+  padding-left: 30px; }
+  .contact_form .formulario .formTitle {
+    font-size: 39px;
+    text-align: letf;
+    padding-bottom: 20px;
+    color: #ab4493; }
+  .contact_form .formulario .formSubTitle {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e; }
+  .contact_form .formulario input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px; }
+    .contact_form .formulario input:focus {
+      outline: 0;
+      border: 1px solid #97d848; }
+  .contact_form .formulario textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ab4493;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px; }
+    .contact_form .formulario textarea:focus {
+      outline: 0;
+      border: 1px solid #97d848; }
+  .contact_form label {
+    display: block;
+    float: center; }
+  .contact_form button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #ab4493;
+    border-color: #ab4493;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer; }
+    .contact_form button p {
+      color: #fff; }
+  .contact_form p {
+    font-size: 14px;
+    color: #0e0e0e; }
+    .contact_form p .obligatorio {
+      color: #ab4493; }
+    .contact_form p .aviso {
+      font-size: 13px;
+      color: #0e0e0e; }
 
 ::-webkit-input-placeholder {
-  color: #a8a8a8;
-}
+  color: #a8a8a8; }
 
 ::-webkit-textarea-placeholder {
-  color: #a8a8a8;
-}
+  color: #a8a8a8; }
 
-.formulario input:focus {
-  outline: 0;
-  border: 1px solid #97d848;
-}
-
-.formulario textarea:focus {
-  outline: 0;
-  border: 1px solid #97d848;
-} */
-
-/* media queries */
-
-/* @media screen and (min-width:320px) and (max-width:937px) {
+@media screen and (min-width: 320px) and (max-width: 937px) {
   #videoHome {
-    flex-direction: column-reverse;
-  }
-}
+    flex-direction: column-reverse; } }
 
-@media screen and (min-width:320px) and (max-width:577px) {
+@media screen and (min-width: 320px) and (max-width: 577px) {
   header {
-    flex-direction: column;
-  }
-}
+    flex-direction: column; } }
 
-@media screen and (min-width:320px) and (max-width:479px){
-  .video iframe{
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .video iframe {
     width: 380px;
-    height: 240px;
-  }
-}
+    height: 240px; } }
 
-@media screen and (min-width:320px) and (max-width:379px) {
-
+@media screen and (min-width: 320px) and (max-width: 379px) {
   nav > ul > li > a {
-    font-size: 1.2em;
-  }
-
+    font-size: 1.2em; }
   .videoHomeDescription h1 {
-    font-size: 2em;
-  }
-
+    font-size: 2em; }
   .videoHomeDescription p {
-    font-size: 1.4em;
-  }
-
+    font-size: 1.4em; }
   .video iframe {
     width: 280px;
-    height: 240px;
-  }
-}
+    height: 240px; } }
 
-@media screen and (min-width:320px) and (max-width:398px) {
-
-  .servArticle{
-    gap: .5rem;
-  }
-
-  .servTitle{
-    font-size: 2em;
-  }
-
-  .servDescription{
+@media screen and (min-width: 320px) and (max-width: 398px) {
+  .servArticle {
+    gap: .5rem; }
+  .servTitle {
+    font-size: 2em; }
+  .servDescription {
     font-size: 1.4em;
-    padding: .5rem;
-  }
-}
+    padding: .5rem; } }
 
-@media screen and (min-width:425px) and (max-width:599px) {
-
+@media screen and (min-width: 425px) and (max-width: 599px) {
   .map {
     width: 500px;
-    height: 500px;
-  }
-}
+    height: 500px; } }
 
-@media screen and (min-width:320px) and (max-width:499px) {
-
+@media screen and (min-width: 320px) and (max-width: 499px) {
   .map {
     width: 300px;
-    height: 300px;
-  }
-}
+    height: 300px; } }
 
-@media screen and (min-width:320px) and (max-width:515px) {
-  .staff{
+@media screen and (min-width: 320px) and (max-width: 515px) {
+  .staff {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-  }
-
-  .fisioName {
-    font-size: 2em;
-  }
-
+    gap: 1rem; }
+  .fisioName, .staff .staffBox .fisioDescription, .services .servArticle .servTitle {
+    font-size: 2em; }
   .fisioDescription {
-    font-size: 1.4em;
-  }
-} */
+    font-size: 1.4em; } }

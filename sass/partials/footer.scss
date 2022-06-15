@@ -1,7 +1,7 @@
 
 
 footer {
-  background-color: rgb(0, 194, 187);
+  background-color: map-get($colors, bg-color);
   height: 55px;
   margin-top: 2rem;
   display: flex;
