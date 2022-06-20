@@ -135,7 +135,6 @@ footer {
 .carousel {
   margin: 2rem 0; }
   .carousel .carousel-inner {
-    height: 240px;
     border: 2px solid #48769e; }
   .carousel .carousel-control-next {
     margin: auto; }
