@@ -16,7 +16,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-image: url("../img/fisioterapia.jpg");
+  background-image: url("../img/fisioterapia.webp");
   background-position: center center;
   background-attachment: fixed;
   min-height: 100vh;
@@ -122,11 +122,14 @@ footer {
       height: 165px;
       border-radius: 10px;
       padding-top: .5rem; }
-    .staff .staffBox .fisioName, .staff .staffBox .fisioDescription, .staff .staffBox .services .servArticle .servTitle, .services .servArticle .staff .staffBox .servTitle {
+    .staff .staffBox .fisioName {
       font-family: 'K2D', sans-serif;
       font-size: 2.5em;
       color: #000035; }
     .staff .staffBox .fisioDescription {
+      font-family: 'Average Sans', sans-serif;
+      font-size: 1.6em;
+      color: #060641;
       padding: 1rem; }
 
 .carousel {
@@ -142,8 +145,7 @@ footer {
 .services {
   gap: 2rem;
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
-  border: 1px solid red; }
+  grid-template: 1fr 1fr / 1fr 1fr; }
   .services .servArticle {
     display: flex;
     flex-direction: column;
@@ -152,9 +154,12 @@ footer {
     gap: 1rem;
     flex: 1 1 40%; }
     .services .servArticle .servTitle {
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-family: 'K2D', sans-serif;
+      font-size: 2.5em;
+      color: #000035; }
     .services .servArticle .servDescription {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Average Sans', sans-serif;
       font-size: 1.6em;
       text-align: justify;
       padding: 1.5rem;
@@ -296,7 +301,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem; }
-  .fisioName, .staff .staffBox .fisioDescription, .services .servArticle .servTitle {
+  .fisioName {
     font-size: 2em; }
   .fisioDescription {
     font-size: 1.4em; } }

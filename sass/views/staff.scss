@@ -31,10 +31,9 @@
     }
 
     .fisioDescription {
-      @extend .fisioName;
-      // font-family: 'Average Sans', sans-serif;
-      // font-size: 1.6em;
-      // color: map-get($colors, text-color);
+      font-family: 'Average Sans', sans-serif;
+      font-size: 1.6em;
+      color: map-get($colors, text-color);
       padding: 1rem;
     }
   }
