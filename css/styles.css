@@ -114,8 +114,7 @@ footer {
     flex-direction: column;
     justify-content: normal;
     align-items: center;
-    gap: 1rem;
-    transition: all .5s linear; }
+    gap: 1rem; }
     .staff .staffBox .fisioPhoto {
       width: 248px;
       height: 165px;
@@ -257,6 +256,8 @@ footer {
   color: #a8a8a8; }
 
 @media (hover: hover) {
+  .staff .staffBox {
+    transition: all .5s linear; }
   .staff .staffBox:hover {
     transform: scale(1.1, 1.1); } }
 

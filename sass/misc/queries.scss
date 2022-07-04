@@ -2,6 +2,10 @@
 
 @media (hover: hover){
 
+  .staff .staffBox{
+    transition: all .5s linear;
+  }
+
   .staff .staffBox:hover {
     transform: scale(1.1, 1.1);
   }
