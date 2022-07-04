@@ -9,9 +9,9 @@
     @include flex(column,normal,center,1rem);
     transition: all .5s linear;
 
-    &:hover {
-      transform: scale(1.1, 1.1);
-    }
+    // &:hover {
+    //   transform: scale(1.1, 1.1);
+    // }
 
     .fisioPhoto {
       width: 248px;
