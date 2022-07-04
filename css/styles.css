@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=K2D:wght@200;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Average+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=K2D:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Splash&display=swap");
 .glassEffect {
   background: rgba(155, 155, 155, 0.25);
   backdrop-filter: blur(3.5px);
@@ -54,7 +55,7 @@ header {
         header nav ul li a {
           color: #00033e;
           text-decoration: none;
-          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          font-family: "K2D", sans-serif;
           font-size: 1.6em;
           border-top: 2px solid #00c2bb;
           border-bottom: 2px solid #00c2bb;
@@ -96,11 +97,11 @@ footer {
     margin: 1.5rem;
     text-align: center; }
     .mainIndex .videoHomeDescription h1 {
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: "K2D", sans-serif;
       font-size: 2.5em;
       color: #000035; }
     .mainIndex .videoHomeDescription p {
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: "Arima", cursive;
       font-size: 1.6em;
       color: #060641; }
 
@@ -123,11 +124,11 @@ footer {
       border-radius: 10px;
       padding-top: .5rem; }
     .staff .staffBox .fisioName {
-      font-family: 'K2D', sans-serif;
+      font-family: "K2D", sans-serif;
       font-size: 2.5em;
       color: #000035; }
     .staff .staffBox .fisioDescription {
-      font-family: 'Average Sans', sans-serif;
+      font-family: "Arima", cursive;
       font-size: 1.6em;
       color: #060641;
       padding: 1rem; }
@@ -154,15 +155,15 @@ footer {
     flex: 1 1 40%; }
     .services .servArticle .servTitle {
       margin-bottom: 1rem;
-      font-family: 'K2D', sans-serif;
+      font-family: "K2D", sans-serif;
       font-size: 2.5em;
       color: #000035; }
     .services .servArticle .servDescription {
-      font-family: 'Average Sans', sans-serif;
+      font-family: "Arima", cursive;
       font-size: 1.6em;
+      color: #060641;
       text-align: justify;
-      padding: 1.5rem;
-      color: #060641; }
+      padding: 1.5rem; }
 
 .map {
   width: 600px;
@@ -170,6 +171,7 @@ footer {
 
 .mapTitle {
   text-align: center;
+  font-family: "K2D", sans-serif;
   font-size: 2.5em; }
 
 .contact_form {
@@ -185,11 +187,13 @@ footer {
     font-size: 39px;
     text-align: letf;
     padding-bottom: 20px;
-    color: #ab4493; }
+    color: #ab4493;
+    font-family: "K2D", sans-serif; }
   .contact_form .formulario .formSubTitle {
     font-size: 16px;
     padding-bottom: 30px;
-    color: #0e0e0e; }
+    color: #0e0e0e;
+    font-family: "Arima", cursive; }
   .contact_form .formulario input {
     background-color: #fbfbfb;
     width: 408px;
@@ -239,12 +243,14 @@ footer {
       color: #fff; }
   .contact_form p {
     font-size: 14px;
-    color: #0e0e0e; }
+    color: #0e0e0e;
+    font-family: "Arima", cursive; }
     .contact_form p .obligatorio {
       color: #ab4493; }
     .contact_form p .aviso {
       font-size: 13px;
-      color: #0e0e0e; }
+      color: #0e0e0e;
+      font-family: "Arima", cursive; }
 
 ::-webkit-input-placeholder {
   color: #a8a8a8; }
@@ -258,22 +264,28 @@ footer {
 
 @media screen and (min-width: 320px) and (max-width: 577px) {
   header {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: normal;
+    gap: 2rem; } }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
-  .video iframe {
+  .mainIndex #videoHome .video iframe {
     width: 380px;
     height: 240px; } }
 
 @media screen and (min-width: 320px) and (max-width: 379px) {
-  nav > ul > li > a {
+  header nav ul li a {
     font-size: 1.2em; }
-  .videoHomeDescription h1 {
+  .mainIndex .videoHomeDescription h1 {
     font-size: 2em; }
-  .videoHomeDescription p {
+  .mainIndex .videoHomeDescription p {
     font-size: 1.4em; }
-  .video iframe {
-    width: 280px;
+  .mainIndex #videoHome .video iframe {
+    width: 300px;
     height: 240px; } }
 
 @media screen and (min-width: 320px) and (max-width: 398px) {

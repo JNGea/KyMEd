@@ -34,8 +34,8 @@ header {
         a {
           color: map-get($colors, base);
           text-decoration: none;
-          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-          font-size: 1.6em;
+          font-family: map-get(map-get($fontFamily, font-family),title);
+          font-size: map-get(map-get($fontSize,font-size),txt);
           border-top: 2px solid map-get($colors, bg-color );
           border-bottom: 2px solid map-get($colors, bg-color );
           transition: all .3s ease-in-out;

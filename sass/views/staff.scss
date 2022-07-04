@@ -7,10 +7,6 @@
 
   .staffBox {
     @include flex(column,normal,center,1rem);
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // gap: 1rem;
     transition: all .5s linear;
 
     &:hover {
@@ -25,14 +21,14 @@
     }
 
     .fisioName {
-      font-family: 'K2D', sans-serif;
-      font-size: 2.5em;
+      font-family: map-get(map-get($fontFamily, font-family), title);
+      font-size: map-get(map-get($fontSize,font-size),title);
       color: map-get($colors, primary);
     }
 
     .fisioDescription {
-      font-family: 'Average Sans', sans-serif;
-      font-size: 1.6em;
+      font-family: map-get(map-get($fontFamily, font-family), txt);
+      font-size: map-get(map-get($fontSize, font-size), txt);
       color: map-get($colors, text-color);
       padding: 1rem;
     }

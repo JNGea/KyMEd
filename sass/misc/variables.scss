@@ -1,7 +1,24 @@
 
-$colors: (
+$colors:(
   base: rgb(0, 3, 62),
   primary: rgb(0, 0, 53),
   text-color: rgb(6, 6, 65),
   bg-color: rgb(0, 194, 187),
+);
+
+$fontSize:(
+  font-size:(
+  title: 2.5em,
+  titleSmall: 2em,
+  txt: 1.6em,
+  txtSmall: 1.4em,
+  txtXs: 1.2em,
+  ),
+);
+
+$fontFamily:(
+  font-family:(
+  title: ('K2D',sans-serif),
+  txt: ('Arima',cursive),
+  ),
 );

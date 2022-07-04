@@ -28,17 +28,17 @@
 
     .servTitle {
       margin-bottom: 1rem;
-      font-family: 'K2D', sans-serif;
-      font-size: 2.5em;
+      font-family: map-get(map-get($fontFamily, font-family), title);
+      font-size: map-get(map-get($fontSize, font-size), title);
       color: map-get($colors, primary);
     }
 
     .servDescription {
-      font-family: 'Average Sans', sans-serif;
-      font-size: 1.6em;
+      font-family: map-get(map-get($fontFamily, font-family), txt);
+      font-size: map-get(map-get($fontSize,font-size),txt);
+      color: map-get($colors, text-color);
       text-align: justify;
       padding: 1.5rem;
-      color: map-get($colors, text-color);
     }
   }
 }
