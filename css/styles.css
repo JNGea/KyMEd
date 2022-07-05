@@ -255,7 +255,7 @@ footer {
 ::-webkit-textarea-placeholder {
   color: #a8a8a8; }
 
-@media (hover: hover) {
+@media (hover) {
   .staff .staffBox {
     transition: all .5s linear; }
     .staff .staffBox:hover {
